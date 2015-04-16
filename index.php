@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * Created by PhpStorm.
  * User: Vitaly
  * Date: 16.04.15
@@ -12,6 +12,7 @@
     <title>Exchanger</title>
 </head>
 <body>
-
+	<?php
+	?>
 </body>
 </html>
