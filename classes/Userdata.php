@@ -25,8 +25,11 @@ class Userdata
     {
 		$queryResult =$this->db->query("SELECT * FROM `user` WHERE `login` = '$login'");
         while($row = mysqli_fetch_array($queryResult)) 
-            if($row['Password'] == md5($password))        
+            if($row['password'] == md5($password)){
                 return "user.php";
+            	$_SESSION['id'] = $row['id'];
+            	$_SESSION['login'] = $row['login'];
+            }        
             else
                 return false;
 	}
