@@ -1,0 +1,54 @@
+DROP DATABASE IF EXISTS `db_swap`;
+CREATE DATABASE `db_swap`;
+USE `db_swap`;
+
+CREATE TABLE `User` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`login` VARCHAR(64),
+	`password` VARCHAR(64),
+	`mail` VARCHAR(64),
+	`id_item` INT(11),
+	PRIMARY KEY (`id`)
+);
+
+
+
+CREATE TABLE `Category` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`name` VARCHAR(64),
+	PRIMARY KEY (`id`)
+);
+
+
+CREATE TABLE `Item` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`id_user` INT(11),
+	`id_category` INT(11),
+	`name` VARCHAR(64),
+	`description` TEXT(256),
+	`img_url` VARCHAR(64),
+	PRIMARY KEY (`id`)
+);
+
+
+
+CREATE TABLE `Offers` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`id_required` INT(11),
+	`id_proposed` INT(11),
+	`id_client` INT(11),
+	`id_user` INT(11),
+	PRIMARY KEY (`id`)
+);
+
+
+
+CREATE TABLE `Decired` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`id_required` INT(11),
+	`id_proposed` INT(11),
+	`id_seller` INT(11),
+	`id_user` INT(11),
+	PRIMARY KEY (`id`)
+);
+																																																																																																																																
