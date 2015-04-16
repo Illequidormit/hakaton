@@ -1,0 +1,5 @@
+ALTER TABLE `db_swap`.`category` CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;
+ALTER TABLE `db_swap`.`decired` CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;
+ALTER TABLE `db_swap`.`item` CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;
+ALTER TABLE `db_swap`.`offers` CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;
+ALTER TABLE `db_swap`.`user` CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;
