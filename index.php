@@ -10,11 +10,6 @@
 <html>
 <head>
     <title>Бартер Обміняйтер</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-paper.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <?php
