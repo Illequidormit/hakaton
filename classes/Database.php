@@ -10,7 +10,7 @@ class Database {
     private $_host = "localhost";
     private $_username = "root";
     private $_password = "";
-    private $_database = "bd_swap";
+    private $_database = "db_swap";
     private $_connection;
 
     static public function getInstance()

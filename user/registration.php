@@ -15,8 +15,8 @@
 		<?php				
 			if(isset($_POST['Sign_up']))
 				if(!empty($_POST['login']) && !empty($_POST['password']) && !empty($_POST['mail'])){
-				include('Database.php');
-				$db = Database::getInstance();
+				include('../classes/Userdata.php');
+				$db = new Userdata();
 				$db->createUser($_POST['login'],$_POST['password'],$_POST['mail']);
 				}
 			else{
