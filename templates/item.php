@@ -29,7 +29,7 @@
                   <?php
                   	include('../classes/ItemData.php');
 					$id = new ItemData();
-					$id->printAllItem($_GET['cat']);
+					$id->printItem($_GET['item']);
                   ?>
                 </div>
             <div class="col-sm-4">
