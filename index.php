@@ -13,7 +13,7 @@
 </head>
 <body>
 <?php
-    require_once "templates/navbar.html";
+    include "navbar.php";
     include "templates/header.html";
 ?>
 <div class="main-wrap">
