@@ -1,3 +1,7 @@
+DROP DATABASE IF EXISTS `db_swap`;
+CREATE DATABASE `db_swap`;
+USE `db_swap`;
+
 CREATE TABLE `User` (
 	`id` INT(11) NOT NULL AUTO_INCREMENT,
 	`login` VARCHAR(64),
@@ -7,8 +11,7 @@ CREATE TABLE `User` (
 	PRIMARY KEY (`id`)
 );
 
-ALTER TABLE `User` ADD CONSTRAINT `User_fk0` FOREIGN KEY (`id`) REFERENCES (``);
-ALTER TABLE `User` ADD CONSTRAINT `User_fk1` FOREIGN KEY (`id_item`) REFERENCES Item(`id`);
+
 
 CREATE TABLE `Category` (
 	`id` INT(11) NOT NULL AUTO_INCREMENT,
@@ -27,7 +30,7 @@ CREATE TABLE `Item` (
 	PRIMARY KEY (`id`)
 );
 
-ALTER TABLE `Item` ADD CONSTRAINT `Item_fk0` FOREIGN KEY (`id_category`) REFERENCES Category(`id`);
+
 
 CREATE TABLE `Offers` (
 	`id` INT(11) NOT NULL AUTO_INCREMENT,
@@ -38,7 +41,7 @@ CREATE TABLE `Offers` (
 	PRIMARY KEY (`id`)
 );
 
-ALTER TABLE `Offers` ADD CONSTRAINT `Offers_fk0` FOREIGN KEY (`id_user`) REFERENCES User(`id`);
+
 
 CREATE TABLE `Decired` (
 	`id` INT(11) NOT NULL AUTO_INCREMENT,
@@ -48,5 +51,4 @@ CREATE TABLE `Decired` (
 	`id_user` INT(11),
 	PRIMARY KEY (`id`)
 );
-
-ALTER TABLE `Decired` ADD CONSTRAINT `Decired_fk0` FOREIGN KEY (`id_user`) REFERENCES User(`id`);
+																																																																																																																																
