@@ -16,9 +16,11 @@
 				include('../classes/Userdata.php');
 				$db = new Userdata();
 				$db->enter($_POST['login'],$_POST['password']);
+				$db->printname();
 				}
 			else{
 				echo "Заповніть поля для реєстрації";
+
 			}
 		?>
 	</body>
