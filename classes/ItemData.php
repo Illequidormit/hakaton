@@ -32,4 +32,21 @@ class ItemData
         $queryResult = $this->db->query($command);
     }
 
+    public function printItem($category)
+    {
+        $command = "SELECT * FROM `item` WHERE `category` = '$category'";
+        $queryResult = $this->db->query($command);
+        while($row = mysqli_fetch_array($queryResult)) 
+            	echo "<div class="col-sm-3">
+                        <a href='$row['name']'>
+                            <div class='well category'>
+                                <img src='images/category/$row['img_url']'>
+                                <h4>Kid world</h4>
+                            </div>
+                        </a>
+                    </div>"
+
+    }
+
+
 }
