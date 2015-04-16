@@ -35,5 +35,17 @@ class Userdata
                 return false;
 	}
 
+	public function addOffers($id_user, $id_required, $id_proposed, $id_client)
+		{
+			$command = "INSERT INTO Offers(id_user, id_required, id_proposed, id_client) 
+				VALUES ('$id_user', '$id_required', '$id_proposed', '$id_client')";
+			$queryResult = $this->db->query($command);
+		}
+
+	public function deleteOffers($id)
+	{
+		$command = "DELETE  FROM `Offers` WHERE `id` = '$id'";
+	    $queryResult = $this->db->query($command);
+	}
 }
 
