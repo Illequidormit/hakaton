@@ -1,0 +1,36 @@
+.navbar {
+    height: 60px;
+    margin-bottom: 0px;
+}
+
+body {
+    min-height: 800px;
+}
+
+.jumbotron {
+    background-image: url("../images/STRONG-HANDSHAKE.jpg");
+    background-size: 100%;
+    background-position: center;
+    margin-top: 60px;
+    height: 250px;
+    color: black;
+    text-align: center;
+}
+
+.jumbotron h1 {
+    color: black;
+}
+
+.jumbotron p {
+    font-size: 25;
+}
+
+.category {
+    text-align: center;
+    height: 120px;
+    margin-bottom: 40px;
+}
+
+.category img {
+    height: 50px;
+}
