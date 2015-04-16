@@ -22,7 +22,7 @@
             <div class="col-sm-8">
                 <div class="row">
                     <div class="col-sm-3">
-                        <a href="#">
+                        <a href="templates/all_items.php?cat=1">
                             <div class="well category">
                                 <img src="images/category/1.png">
                                 <h4>Kid world</h4>
